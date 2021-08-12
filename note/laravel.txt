@@ -1,0 +1,7 @@
+php artisan make:migration create_users_table --path=/path/to/your/migration/directory
+
+php artisan migrate --path=/path/to/your/migration/directory
+
+
+E:\react\reactecom>php artisan make:migration create_categories_table --path=/da
+tabase/migrations/front/

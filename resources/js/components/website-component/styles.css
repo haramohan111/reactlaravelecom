@@ -1,0 +1,79 @@
+
+
+@media screen and (min-width: 320px) {
+  .slider-text {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .slider-image {
+    height: 50vh;
+  }
+
+
+
+}
+@media screen and (min-width: 768px) {
+
+  .slider-text {
+    width: 40%;
+    padding: 3rem;
+  }
+  .slider-image {
+    height: 60vh;
+  }
+  .brand-img {
+    height: inherit;
+  }
+
+}
+
+.slider-text {
+  color: white;
+  height: 100%;
+ 
+}
+
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bold-text {
+font-weight: 700;
+}
+.curved-edge-btn {
+  border-radius: 5px;
+}
+.primary-btn {
+  background-color: #2563eb;
+  border: solid 2px #2563eb;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+button {
+  outline: none;
+}
+.link-btn {
+  text-decoration: none;
+  color: inherit;
+}
+.small-text {
+  font-size: 1rem;
+}
+
+.large-text {
+font-size: 32px;
+
+width: 70px;
+white-space: nowrap;
+}
+.primary-btn {
+  background-color: #2563eb;
+  border: solid 2px #2563eb;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+
+
+

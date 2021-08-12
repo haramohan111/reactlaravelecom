@@ -1,0 +1,68 @@
+composer require laravel/ui
+php artisan ui react
+npm install
+npm run dev
+
+npm install react-router-dom
+
+npm uninstall -g bootstrap --save 
+npm uninstall -g bootstrap --save-dev
+npm uninstall sass --save-dev 
+npm uninstall sass-loader --save-dev 
+
+npm install --only=dev
+
+npm uninstall -g unlink
+
+npm install redux
+
+npm i react-js-pagination
+
+npm install --save react-spinners
+
+tostify
+--------
+yarn add react-tostify
+import {toast} from 'react-toastify'
+import 'react-toasify/dist/ReactToastify.css'
+
+-----------
+
+import {Link} from "react-router-dom";
+import {BrowserRouter as Router, Route} from "react-router-dom"
+
+
+provider and store(App.js)
+-------------------
+import {Provider} from "react-redux";
+import store from "./store"; 
+
+    <Router>
+     <Provider store={store}>
+     <Nav />
+     <Route path="/" exact component={Home} />
+     <Route path="/cart" exact component={Cart} />
+     <Route path="/details/:id" exact component={Details} />
+     </Provider>
+    </Router>
+
+
+
+index.js
+--------
+import {createStore, combineReducers} from "redux"
+import ProductsReducer from "./reducers/ProductsReducer"
+import CartReducer from "./reducers/CartReducer"
+import { devToolsEnhancer } from 'redux-devtools-extension';
+const root = combineReducers({
+    ProductsReducer,
+    CartReducer
+});
+const store = createStore(root, devToolsEnhancer());
+export default store;
+
+
+laravel realation
+----------------
+1>hasone one use has relation with one address
+1>hasmany 

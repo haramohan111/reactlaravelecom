@@ -1,0 +1,47 @@
+
+
+@media screen and (min-width: 320px) {
+    .slider-text {
+      width: 100%;
+      padding: 0.5rem;
+    }
+    .slider-image {
+      height: 20vh;
+    }
+  
+  
+  
+  }
+  @media screen and (min-width: 768px) {
+  
+   .slider-image {
+        height: 20vh;
+    }
+  .slider-text {
+    color: white;
+    height: 100%; 
+  }
+
+ .image {
+    width: 100%;
+}
+  }
+  .bg-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .bold-text {
+  font-weight: 700;
+  }
+  .slider-image {
+    height: 40vh;
+}
+
+.mm{
+    display: inline-block;
+
+}
+ 
+  
+  

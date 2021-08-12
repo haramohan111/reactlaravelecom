@@ -1,0 +1,15 @@
+.featured-product .products {
+    margin-left: 21px;
+    margin-top:21px;
+}
+.slick-prev{
+    left: 772px;
+}
+
+.slick-arrow{
+margin-top: -184px;
+}
+
+.slick-next {
+right: 16px;
+}

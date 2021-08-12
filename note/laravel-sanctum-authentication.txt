@@ -1,0 +1,38 @@
+composer require laravel/sanctum
+composer require laravel/ui
+
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+
+after run created one file inside config folder and migration
+
+php artisan migrate
+
+php artisan ui:controllers
+php artisan ui:auth
+php artisan route list
+
+
+app/Http/Kernel.php
+-------------------
+\Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+
+
+'api' => [
+    \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+    'throttle:api',
+    \Illuminate\Routing\Middleware\SubstituteBindings::class,
+],
+
+
+axios.defaults.withCredentials = true;
+
+
+axios.get('/sanctum/csrf-cookie').then(response => {
+    // Login...
+});
+
+cores.php
+---------
+'paths' => ['api/*', 'sanctum/csrf-cookie','login'],
+
+  'supports_credentials' => treu,
